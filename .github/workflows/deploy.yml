@@ -1,26 +1,29 @@
-name: Deploy Vite app to GitHub Pages
+name: Deploy Vite App to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # or 'master' if your default branch is named that
+      - main
+
+permissions:
+  contents: write  # Important: allows push to gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout source
         uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Or your version
+          node-version: 18
           cache: npm
 
       - name: Install dependencies
-        run: npm i
+        run: npm ci
 
       - name: Build the site
         run: npm run build
