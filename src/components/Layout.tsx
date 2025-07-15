@@ -5,7 +5,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <>
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6">Your Brand</Typography>
+        <Typography variant="h6">Shreyas Bakare</Typography>
       </Toolbar>
     </AppBar>
     <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
