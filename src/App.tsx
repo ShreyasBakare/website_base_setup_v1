@@ -23,8 +23,8 @@ function App() {
               {/* <ModeToggle /> */}
             </div>
           </div>
-          <h1>Welcome to Your Professional Website</h1>
-          <p>This is your homepage. Add more sections as needed.</p>
+          <h1>Welcome to my Website</h1>
+          <p>Under construction!</p>
         </Layout>
     </ThemeProvider>
   )
